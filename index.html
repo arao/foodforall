@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodForAll</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            min-height: 80px;
+        }
+
+        .navbar-brand {
+            padding: 0 15px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .navbar-toggle {
+            /* (80px - button height 34px) / 2 = 23px */
+            margin-top: 23px;
+            padding: 9px 10px !important;
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav > li > a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+        }
+        i{
+            margin-left: 5px;
+            margin-right:5px;
+        }
+        .contacts {
+            position: relative;
+            width: 150px;
+            height: 180px;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 150px;
+            height: 180px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            width: 150px;
+            opacity: 0;
+            position: absolute;
+            transform: translate(0, -100%) scale(1,1);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .contacts:hover .image {
+            opacity: 0.3;
+        }
+
+        .contacts:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: silver;
+            color: white;
+            font-size: 13px;
+            justify-items: left;
+            padding: 2px;
+        }
+
+        .gallery{
+            width: 100%;
+            height: auto;
+            left: 3px;
+            border-radius: 3px;
+        }
+        .adjust{
+            margin-bottom: 10px;
+        }
+
+        .section{
+            padding-top:90px;
+            height:auto;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" >
+
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#Home">
+                    <span class="container-fluid" style="display: inline-block; position: relative">
+                        <img src="./image/logo.png" alt=Logo"  style="width: 64px; height: auto ; border-radius: 10px">
+                        <span>Food For All</span>
+                    </span>
+
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Events">Upcomming Events</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section" id="Home">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 ">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="./image/2017-11-22-PHOTO-00000023.jpg" alt="Chania" width="auto"  >
+                            <!--<div class="carousel-caption">-->
+                                <!--<h3>Chania</h3>-->
+                                <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="item">
+                            <img src="./image/2017-11-22-PHOTO-00000024.jpg" alt="Chania" width="auto" >
+                            <!--<div class="carousel-caption">-->
+                                <!--<h3>Chania</h3>-->
+                                <!--<p>The atmosphere in Chania has a touch of Florence and Venice.</p>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="item">
+                            <img src="./image/2017-11-22-PHOTO-00000025.jpg" alt="Flower" width="auto" >
+                            <!--<div class="carousel-caption">-->
+                                <!--<h3>Flowers</h3>-->
+                                <!--<p>Beautiful flowers in Kolymbari, Crete.</p>-->
+                            <!--</div>-->
+                        </div>
+
+                        <div class="item">
+                            <img src="./image/2017-11-22-PHOTO-00000026.jpg" alt="Flower" width="auto">
+                            <!--<div class="carousel-caption">-->
+                                <!--<h3>Flowers</h3>-->
+                                <!--<p>Beautiful flowers in Kolymbari, Crete.</p>-->
+                            <!--</div>-->
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid section" id="About">
+        <div class="lead">
+            About Us
+        </div>
+        <p class="text-justify">
+            The idea to serve free Food just outside the AIIMS campus to the needy people came in the mind when member of AIIMS staff
+            while moving through AIIMS entry gate in the month of January 2017 . Immediately they  shared this with his ICU collegeous.
+            Soon the idea was implemented with the support of all youngsters.
+        </p>
+        <p class="text-justify">
+            The first event of free Food event was organised on 5th January on the Birthday Anniversary of <b>Shree Guru Gobind Singh ji</b>
+            named <b>“ Food For All “</b>
+            Today with the support of hundreds of collegeous from AIIMS and Outside the AIIMS
+            we are successfully organising the Free Food camps twice in a month just outside the AIIMS near the Metro gate no. 2.
+            Till october last we have organised 18 events by distributing quality food to thousands of needy people
+
+            On the occasion of 15th event we had registered our Food for All group as a NGO ( registration no. 2142 ).
+        </p>
+        <p class="text-justify">Food For All is started with two members and now it has 150+ members till october 2017.</p>
+        <p class="text-justify">
+            The Five committe members are:
+        </p>
+
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 adjust">
+                <div class="contacts">
+                    <img src="./image/1JagpreetSingh.jpeg" alt="Jagpreet Singh" class="image">
+                    <div class="middle">
+                        <div class="text">
+                            <p>Mr. Jagpreet Singh
+                                <br>
+                                <small>(Chairman)</small>
+                                <br>
+                                +91 9878535897
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 adjust">
+                <div class="contacts">
+                    <img src="./image/2Amandeep%20Kaur.jpeg" alt="Amandeep Kaur" class="image">
+                    <div class="middle">
+                        <div class="text">
+                            <p> Ms. Amandeep Kaur
+                                <br>
+                                <small>(Vice President)</small>
+                                <br>
+                                +91 9xxxxxxxxx
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 adjust">
+                <div class="contacts">
+                    <img src="./image/3KalpanaShandil.jpg" alt="Kalpana Shandil" class="image">
+                    <div class="middle">
+                        <div class="text">
+                            <p> Mr. Kalpana Shandil
+                                <br>
+                                <small>(Joint Secretary)</small>
+                                <br>
+                                +91 9xxxxxxxxx
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 adjust">
+                <div class="contacts">
+                    <img src="./image/4Narayan%20Parsad.jpg" alt="Narayan Parsad" class="image">
+                    <div class="middle">
+                        <div class="text">
+                            <p> Mr. Narayan Parasad
+                                <br>
+                                <small>(Joint Secretary)</small>
+                                <br>
+                                +91 99891609249
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 adjust">
+                <div class="contacts">
+                    <img src="./image/5Bharatkumar.jpg" alt="Bharat Kumar" class="image">
+                    <div class="middle">
+                        <div class="text">
+                            <p> Mr. Bharat Kumar
+                                <br>
+                                <small>(General Secreatry)</small>
+                                <br>
+                                +91 9953538749
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="lead">
+            Objectives
+        </p>
+        <ol>
+            <li> Serve food outside the hospital for patient and their attendants.</li>
+            <li>Provide education/ useful knowledge/ counselling and medical advice to general public regarding the vices of the trust like smack, smoking, use of alcoho etc. through organising camps and also to organize the lecture by expert team of doctors, journalists, lawyers, subject specialists, etc.</li>
+            <li>Promote safe and healthy livins among children and communities.</li>
+            <li>Provide nutritional support to children of primary stage in drought affected areas.</li>
+            <li>Work for resource less and poor people by active involvement in rural development through public participation and to coordinate with social activites.</li>
+            <li>Make every possible efforts to control/manage the situations arising out of natural calamities and to provide relief to victims by securing financial and material support from other institutions , agencies, and persons.</li>
+            <li> to do work for clean india by way of swach bharat abhiyan and many more.</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="container-fluid section" id="Gallery">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                    <img src="./image/2017-11-22-PHOTO-00000025.jpg" alt="gallery" class="gallery">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                <img src="./image/2017-11-22-PHOTO-00000026.jpg" alt="gallery" class="gallery">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                <img src="./image/2017-11-22-PHOTO-00000027.jpg" alt="gallery" class="gallery">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                <img src="./image/2017-11-22-PHOTO-00000024.jpg" alt="gallery" class="gallery">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                <img src="./image/2017-11-22-PHOTO-00000023.jpg" alt="gallery" class="gallery">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 adjust">
+                <img src="./image/2017-11-22-PHOTO-00000032.jpg" alt="gallery" class="gallery">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid section" id="Events">
+        <div class="lead">
+            Events
+        </div>
+        <p class="text-justify">
+            <span style="font-weight: bold; font-size: large;">Food For All</span> organise camp twice or thrice a month
+            and as this ngo getting successfully day by day the duration of organising camps will increase.
+            The aim is to distribute the food all days.
+        </p>
+        <p class="text-justify">
+            We also organise special events with Request if someone wants to celebrate his/ her special day by serving
+            to our own people.
+        </p>
+        <div class="lead">
+            Upcoming Events
+        </div>
+        <p>
+
+        </p>
+    </div>
+    <hr>
+    <div class="container-fluid section" id="Contact">
+        <div class="lead">
+            Contacts
+        </div>
+        <address>
+            <ul class="list-inline">
+                <li>
+                    <i class="fa fa-google" style="font-size: 48px; color: #e9672f "></i> <span style="color: #2b669a; font-size: large">foodforall.ffa@gmail.com</span>
+                </li>
+                <li>
+                    <a href="https://www.fb.com/food-for-all-1734353996874379/">
+                        <i class="fa fa-facebook-square" style="font-size: 48px;"></i></a>
+                </li>
+            </ul>
+
+        </address>
+        <hr>
+        <div class="lead">
+            Donation
+        </div>
+        <p class="text-justify">
+            The Success of Food For All group is entirely depend upon the active participation of Volunteers, hence I request to everyone if possible you do participate in the event.
+            Every event informations are given a week before, through different Social media groups.
+        </p>
+        <p>
+            Volunteers can  directly send any amount to our Account.
+        </p>
+        <div class="lead">
+            Account Details :
+        </div>
+        <dl class="dl-horizontal">
+            <dt>Bank</dt>
+            <dd>SBI</dd>
+            <dt>Account Type</dt>
+            <dd>Current Account</dd>
+            <dt>Account Number</dt>
+            <dd>37213099845</dd>
+            <dt>IFSC Code</dt>
+            <dd>SBIN0001536</dd>
+            <dt>Bank Address</dt>
+            <dd>Ansari Nagar branch</dd>
+        </dl>
+    </div>
+</div>
+
+</body>
+</html>
