@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoodForAll</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" />
+    <style>
+        body{
+            overflow: hidden;
+            background-color: #204B5E;
+        }
+        .container{
+            display: flex;
+            position: absolute;
+            z-index: -999;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 0 0;
+            border: 0 ;
+            padding: 0 0 0 0;
+            overflow-y: hidden;
+            overflow-x: hidden ;
+        }
+        .logo{
+            position:relative;
+            display: flex;
+            /*height: 50vh;*/
+            /*width: 50vh;*/
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            margin-bottom: 100px;
+        }
+        .logo>img{
+            position: relative;
+            top: -5vh;
+            transform : scale(0.3,0.3);
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin-top: 10vh;
+            padding-top: 20vh;
+            justify-items: center;
+        }
+        h1{
+            font-family: BatmanForeverAlternate,cursive;
+            font-size: xx-large;
+            background: -webkit-linear-gradient(cornsilk, ivory);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-justify: inter-word;
+            text-align: center;
+            /*//color: ivory;*/
+        }
+    </style>
+</head>
+<body >
+<div class="container">
+    <div class="logo">
+        <img src="./image/logo_noback.png" alt="img">
+    </div>
+    <div class="content">
+        <h1>Something Went Wrong!!!!</h1>
+    </div>
+</div>
+</body>
+</html>

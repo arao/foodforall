@@ -29,15 +29,7 @@
             margin-top: 23px;
             padding: 9px 10px !important;
         }
-
-        @media (min-width: 768px) {
-            .navbar-nav > li > a {
-                /* (80px - line-height of 27px) / 2 = 26.5px */
-                padding-top: 26.5px;
-                padding-bottom: 26.5px;
-                line-height: 27px;
-            }
-        }
+        
         i{
             margin-left: 5px;
             margin-right:5px;
@@ -101,21 +93,44 @@
             margin-bottom: 20px;
             transition: .5s ease;
         }
+        
         .gallery:active, .gallery:hover{
-            -webkit-transform: scale(1.4, 1.4) ;
-            -moz-transform: scale(1.4, 1.4) ;
-            -ms-transform: scale(1.4, 1.4) ;
-            -o-transform: scale(1.4, 1.4) ;
-            transform: scale(1.4, 1.4) ;
+            -webkit-transform: scale(1.2, 1.2) ;
+            -moz-transform: scale(1.2, 1.2) ;
+            -ms-transform: scale(1.2, 1.2) ;
+            -o-transform: scale(1.2, 1.2) ;
+            transform: scale(1.2, 1.2) ;
             transition: .5s ease;
         }
         .adjust{
             margin-bottom: 10px;
         }
-
         .section{
             padding-top:90px;
             height:auto;
+        }
+
+        @media (min-width: 768px) {
+            .navbar-nav > li > a {
+                /* (80px - line-height of 27px) / 2 = 26.5px */
+                padding-top: 26.5px;
+                padding-bottom: 26.5px;
+                line-height: 27px;
+            }
+        }
+
+        @media screen and (max-width: 991px ) {
+            .gallery:active, .gallery:hover{
+                -webkit-transform: scale(1.4, 1.4) ;
+                -moz-transform: scale(1.4, 1.4) ;
+                -ms-transform: scale(1.4, 1.4) ;
+                -o-transform: scale(1.4, 1.4) ;
+                transform: scale(1.4, 1.4) ;
+                transition: .5s ease;
+            }
+            .adjust{
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -313,22 +328,22 @@
             Gallery
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                     <img src="./image/2017-11-22-PHOTO-00000025.jpg" alt="gallery" class="gallery">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                 <img src="./image/2017-11-22-PHOTO-00000026.jpg" alt="gallery" class="gallery">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                 <img src="./image/2017-11-22-PHOTO-00000027.jpg" alt="gallery" class="gallery">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                 <img src="./image/2017-11-22-PHOTO-00000024.jpg" alt="gallery" class="gallery">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                 <img src="./image/2017-11-22-PHOTO-00000023.jpg" alt="gallery" class="gallery">
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-6 col-xs-offset-3 adjust">
+            <div class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2 adjust">
                 <img src="./image/2017-11-22-PHOTO-00000032.jpg" alt="gallery" class="gallery">
             </div>
         </div>
