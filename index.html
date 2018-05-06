@@ -34,55 +34,30 @@
             margin-left: 5px;
             margin-right:5px;
         }
-        .contacts {
-            position: relative;
-            width: 150px;
-            height: 180px;
-            transition: 1s ease;
-            margin: 0 auto;
-        }
-
         .image {
             opacity: 1;
             display: block;
-            width: 150px;
+            width: 100%;
             height: 180px;
-            transition: .5s ease;
-            -moz-transition: .5s ease;
-            -webkit-transition: .5s ease;
-            backface-visibility: hidden;
-            border-radius: 5px;
+            border-radius: 0;
         }
 
-        .middle {
-            transition: .5s ease;
-            width: 150px;
-            opacity: 0;
-            position: absolute;
-            transform: translate(0, -100%) scale(1,1);
-            -ms-transform: translate(0, -100%) scale(1,1);
-            -webkit-transform: translate(0, -100%) scale(1,1) ;
-            -moz-transform: translate(0, -100%) scale(1,1) ;
-            -o-transform: translate(0, -100%) scale(1,1);
-            border-radius: 5px;
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 170px;
         }
 
-        .contacts:hover .image {
-            opacity: 0.7;
-            transition: 0.7s ease;
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
 
-        .contacts:hover .middle {
-            opacity: 1;
-            transition: 0.7s ease;
-        }
-
-        .text {
-            background-color: silver;
-            color: white;
-            font-size: 13px;
-            justify-items: left;
-            padding: 2px;
+        .content{
+            height: 140px;
+            padding: 2px 16px;
         }
 
         .gallery{
@@ -221,8 +196,9 @@
             About Us
         </div>
         <p class="text-justify">
-            The idea to serve free Food just outside the AIIMS campus to the needy people came in the mind when member of AIIMS staff
-            while moving through AIIMS entry gate in the month of January 2017. Immediately they  shared this with his ICU collegeous.
+            The idea to serve free Food just outside the AIIMS campus to the needy people came in the mind when AIIMS
+            staff member Amandeep Kaur and Jagpreet Singh while moving through AIIMS entry gate in the month of
+            January 2017. Immediately they  shared this with his ICU collegeous.
             Soon the idea was implemented with the support of all youngsters.
         </p>
         <p class="text-justify">
@@ -240,93 +216,66 @@
         </p>
 
         <div class="row" >
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust  ">
-                <div class="contacts" >
-                    <img src="./image/1JagpreetSingh.jpeg" alt="Jagpreet Singh" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p>Mr. Jagpreet Singh
-                                <br>
-                                <small>( Chairman )</small>
-                                <br>
-                                +91 9878535897
-                            </p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/1JagpreetSingh.jpeg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Mr. Jagpreet Singh</b></h5>
+                        <p>Chairman</p>
+                        <p>+91 9878535897</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/2Amandeep%20Kaur.jpeg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Ms. Amandeep Kaur</b></h5>
+                        <p>Vice President</p>
+                        <p>+91 9xxxxxxxxx</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/3KalpanaShandil.jpg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Ms. Kalpana Shandil</b></h5>
+                        <p>Joint Secretary</p>
+                        <p>+91 9xxxxxxxxx</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/4Narayan%20Parsad.jpg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Mr. Narayan Parsad</b></h5>
+                        <p>Joint Secretary</p>
+                        <p>+91 99891609249</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-3  col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust">
-                <div class="contacts">
-                    <img src="./image/2Amandeep%20Kaur.jpeg" alt="Amandeep Kaur" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p> Ms. Amandeep Kaur
-                                <br>
-                                <small>( Vice President )</small>
-                                <br>
-                                +91 9xxxxxxxxx
-                            </p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/5Bharatkumar.jpg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Mr. Bharat Kumar</b></h5>
+                        <p>General Secretary</p>
+                        <p>+91 9953538749</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-3  col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust">
-                <div class="contacts">
-                    <img src="./image/3KalpanaShandil.jpg" alt="Kalpana Shandil" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p> Mr. Kalpana Shandil
-                                <br>
-                                <small>( Joint Secretary )</small>
-                                <br>
-                                +91 9xxxxxxxxx
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3  col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust">
-                <div class="contacts">
-                    <img src="./image/4Narayan%20Parsad.jpg" alt="Narayan Parsad" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p> Mr. Narayan Parasad
-                                <br>
-                                <small>( Joint Secretary )</small>
-                                <br>
-                                +91 99891609249
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust">
-                <div class="contacts">
-                    <img src="./image/5Bharatkumar.jpg" alt="Bharat Kumar" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p> Mr. Bharat Kumar
-                                <br>
-                                <small>( General Secreatry )</small>
-                                <br>
-                                +91 9953538749
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-10 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 adjust">
-                <div class="contacts">
-                    <img src="./image/6SandeepIcuc.jpeg" alt="Sandeep Icuc" class="image">
-                    <div class="middle">
-                        <div class="text">
-                            <p> Mr. Sandeep
-                                <br>
-                                    <small>( Media Coordinator )</small>
-                                <br>
-                                +91 7877033309
-                            </p>
-                        </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-10 adjust  ">
+                <div class="card">
+                    <img src="./image/6SandeepIcuc.jpeg" alt="Avatar" class="image">
+                    <div class="content">
+                        <h5><b>Mr. Sandeep Singh</b></h5>
+                        <p>Media Coordinator</p>
+                        <p>+91 7877033309</p>
                     </div>
                 </div>
             </div>
