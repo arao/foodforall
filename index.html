@@ -103,12 +103,18 @@
             transform: scale(1.2, 1.2) ;
             transition: .5s ease;
         }
+
         .adjust{
             margin-bottom: 10px;
         }
+
         .section{
             padding-top:90px;
             height:auto;
+        }
+
+        .list-group-data{
+            margin-left: 20px;
         }
 
         @media (min-width: 768px) {
@@ -387,7 +393,7 @@
         <div class="lead">
             Contacts
         </div>
-        <address>
+            <address>
             <ul class="list-inline">
                 <li>
                     <a href="mailto:foodforall.ffa@gmail.com">
@@ -416,7 +422,7 @@
             <div class="col-12">
                 <div class="list-group" id="Payment" role="tablist">
                     <a class="list-group-item " id="onlinePayment" data-toggle="list" href="#list-onlinePayment" role="tab" aria-controls="Online Payment">Online Payment</a>
-                        <div class="hidden" id="list-onlinePayment" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="hidden list-group-data" id="list-onlinePayment" role="tabpanel" aria-labelledby="list-home-list">
                             <dl class="dl-horizontal">
                             <dt>Bank</dt>
                             <dd>SBI</dd>
@@ -431,22 +437,24 @@
                         </dl>
                         </div>
                     <a class="list-group-item " id="autoDebit" data-toggle="list" href="#list-autoDebit" role="tab" aria-controls="Auto Debit">Auto Debit</a>
-                        <div class="hidden" id="list-autoDebit" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="hidden list-group-data" id="list-autoDebit" role="tabpanel" aria-labelledby="list-profile-list">
                             <dl class="dl-horizontal">
-                            <dt>Bank</dt>
-                            <dd>SBI</dd>
-                            <dt>Account Type</dt>
-                            <dd>Current Account</dd>
-                            <dt>Account Number</dt>
-                            <dd>37213099845</dd>
-                            <dt>IFSC Code</dt>
-                            <dd>SBIN0001536</dd>
-                            <dt>Bank Address</dt>
-                            <dd>Ansari Nagar branch</dd>
+                                <dt>Beneficiary Name</dt>
+                                <dd>Food For All</dd>
+                                <dt>Bank</dt>
+                                <dd>SBI</dd>
+                                <dt>Account Type</dt>
+                                <dd>Current Account</dd>
+                                <dt>Account Number</dt>
+                                <dd>37213099845</dd>
+                                <dt>IFSC Code</dt>
+                                <dd>SBIN0001536</dd>
+                                <dt>Bank Address</dt>
+                                <dd>Ansari Nagar branch</dd>
                         </dl>
                         </div>
                     <a class="list-group-item " id="cash" data-toggle="list" href="#list-cash" role="tab" aria-controls="Cash">Cash</a>
-                        <div class="hidden"  id="list-cash" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="hidden list-group-data"  id="list-cash" role="tabpanel" aria-labelledby="list-messages-list">
                             <dl class="dl-horizontal">
                                 <dt>Mr. Jagpreet Singh</dt>
                                 <dd>+91 7877033309</dd>
